@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <style>
+    
+    :root{
+      --accent: #1e90ff;
+      --muted: #6b7280;
+      --card: #ffffff;
+      --bg: linear-gradient(135deg,#f7fbff,#eef6ff);
+      --radius: 14px;
+      --maxw: 980px;
+      --glass: rgba(255,255,255,0.6);
+      --shadow: 0 8px 24px rgba(16,24,40,0.06);
+      --mono: 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+    }
+
+    
+    html,body{height:100%}
+    body{
+      font-family:var(--mono);
+      background:var(--bg);
+      color:#0f172a;
+      -webkit-font-smoothing:antialiased;
+      line-height:1.5;
+      padding:32px 16px;
+      display:flex;justify-content:center;
+    }
+
+    .wrap{max-width:var(--maxw);width:100%}
+
+   
+    header{
+      display:flex;align-items:center;gap:16px;margin-bottom:20px;
+    }
+    .logo{
+      width:72px;height:72px;border-radius:12px;background:linear-gradient(180deg,var(--accent),#7bdff6);
+      display:flex;align-items:center;justify-content:center;color:white;font-weight:700;font-size:18px;box-shadow:var(--shadow)
+    }
+    header h1{font-size:20px}
+    header p{color:var(--muted);font-size:13px}
+
+    .hero{
+      background:var(--glass);
+      border-radius:var(--radius);
+      padding:22px;
+      display:grid;grid-template-columns:1fr 320px;gap:18px;align-items:center;box-shadow:var(--shadow);
+      margin-bottom:18px;
+    }
+
+    .intro h2{margin-bottom:6px}
+    .intro p{color:var(--muted)}
+
+    .facts{display:flex;flex-direction:column;gap:8px}
+    .fact{background:linear-gradient(180deg,#fff,#fbfdff);padding:12px;border-radius:10px;box-shadow:0 6px 18px rgba(16,24,40,0.04);}
+    .fact strong{display:block}
+
+    
+    section{margin-bottom:18px}
+    .grid{display:grid;gap:14px}
+
+    .about{background:var(--card);padding:18px;border-radius:12px;box-shadow:var(--shadow)}
+
+    .gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}
+    .gallery img{width:100%;height:160px;object-fit:cover;border-radius:10px;display:block}
+
+    .highlights{display:flex;gap:10px;flex-wrap:wrap}
+    .chip{background:#fff;padding:10px 12px;border-radius:999px;box-shadow:0 6px 18px rgba(16,24,40,0.04);font-size:13px}
+
+    .map{height:240px;border-radius:12px;overflow:hidden}
+
+    footer{color:var(--muted);font-size:13px;text-align:center;padding:10px}
+
+   
+    .row{display:flex;gap:12px;align-items:center}
+
+    
+    @media (max-width:880px){
+      .hero{grid-template-columns:1fr;}
+      .gallery{grid-template-columns:repeat(2,1fr)}
+    }
+    @media (max-width:520px){
+      .gallery{grid-template-columns:1fr}
+      header{flex-direction:column;align-items:flex-start}
+    }
+  </style>
+ 
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="logo">HT</div>
+      <div>
+        <h1>Pirojpur</h1>
+        <p>The district beside Boleswor river.</p>
+      </div>
+    </header>
+
+    <div class="hero" role="region" aria-label="Hometown overview">
+      <div class="intro">
+        <h2>Welcome to <em>Pirojpur</em></h2>
+        <p>Pirojpur is situated in Barishal division of Bangladesh.
+		It has a total area of 1,278 km². The people here are very
+		friendly and polite. It has some of the prettiest places around it.</p>
+
+    
+
+        <div style="height:14px"></div>
+        <div class="facts">
+          <div class="fact"><strong>Population</strong><span>— 1,198,195</span></div>
+          <div class="fact"><strong>Distance from capital</strong><span>— 215 km</span></div>
+          <div class="fact"><strong>Best time to visit</strong><span>— November to February</span></div>
+        </div>
+      </div>
+
+      <aside>
+        <img src="images/pirojpur.jpg" alt="main photo of hometown" style="width:100%;height:220px;object-fit:cover;border-radius:10px;display:block">
+      </aside>
+    </div>
+
+    <section class="grid">
+      <div class="about">
+        <h3>About</h3>
+        <p>Pirojpur, a district in Bangladesh's Barisal division, boasts a rich history and vibrant culture. It was established as a district in 1984, with its municipality formed earlier in 1885. Pirojpur is known for its scenic beauty, with the Boleshwari, Kocha, and Sandha rivers flowing through it. The district is also famous for its agricultural products, including coconuts, guavas, and betel leaves. What's most endearing is the friendly and helpful nature of its people, making it a welcoming place to experience its unique culture. </p>
+      </div>
+	  
+	  <div class="about">
+        <h3>Gallery</h3>
+        <div class="gallery">
+          <img src="images/pirojpur1.jpg" alt="photo 1 of hometown">
+          <img src="images/pirojpur2.jpg" alt="photo 2 of hometown">
+          <img src="images/pirojpur3.jpg" alt="photo 3 of hometown">
+        </div>
+      </div>
+
+      <div class="about">
+        <h3>Top 3 Places to Visit</h3>
+        <ol style="margin-top:10px">
+          <li><strong>Rayerkathi Jomidar Bari</strong> — Rayerkathi Jomidar Bari is a historical structure located in Pirojpur, Bangladesh, known for its age and association with the zamindar (landlord) system. It is a significant landmark with a history spanning approximately three and a half centuries. The complex includes the Rayerkathi Jamidar Bari Mandir, a temple within the compound.</li>
+          <li><strong>Bhandaria Shishu Park</strong> — Bhandaria Shishu Park is more than just an amusement park; it's a community hub where families can come together to create lasting memories. The park hosts various events and activities throughout the year, further enhancing its appeal as a destination for family fun.</li>
+          <li><strong>Momin Masjid</strong> — Momin Masjid, located in Pirojpur, Bangladesh, is a historical mosque renowned for its unique wooden architecture. Built in the early 20th century, it features intricate woodwork, including carved panels and floral motifs, reflecting Indo-Persian and European design influences. Designated as a national heritage site, the mosque is a testament to the craftsmanship of its era and a significant cultural landmark.</li>
+        </ol>
+      </div>
+
+      <div class="about">
+        <h3>Local Food & Drinks</h3>
+        <p>Patay Bhaja - its a very popular dish around here specially for its smoky flavor and spiciness.</p>
+		<p>Molida - Its casually one of the best drinks of the locality.</p>
+      </div>
+    
+  </div>
+</body>
+</html>
