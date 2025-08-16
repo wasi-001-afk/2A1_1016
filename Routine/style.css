@@ -1,0 +1,40 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+
+table {
+  border-collapse: collapse;
+  margin: auto;
+  font-size: 14px;
+}
+
+th, td {
+  border: 1px solid black;
+  padding: 6px 10px;
+  text-align: center;
+}
+
+/* Color classes */
+.pink {
+  background-color: #f8c6d4;
+}
+
+.teal {
+  background-color: #c6f0e4;
+}
+
+.yellow {
+  background-color: #fff7a8;
+}
+
+.cream {
+  background-color: #f9e9d2;
+}
+
+.purple {
+  background-color: #d6c8f5;
+}
+
+.grey {
+ background-color: #808080
