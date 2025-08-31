@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flexible Form</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="form-container">
+    <form action="login.html" method="GET">
+      <!-- Username -->
+      <label for="username">Username</label>
+      <input type="text" id="username" placeholder="Enter username" required>
+
+      <!-- Password -->
+      <label for="password">Password</label>
+      <input type="password" id="password" placeholder="Enter password" minlength="4" maxlength="12" required>
+      <small>Your password is between 4 and 12 characters.</small>
+
+      <!-- Input with error -->
+      <label for="errorInput">Input Text Label</label>
+      <input type="text" id="errorInput" value="Typing |" class="error">
+      <small class="error-message">Error message informing me of a problem</small>
+
+      <!-- Checkbox -->
+      <label class="checkbox">
+        <input type="checkbox" checked>
+        Remember me
+      </label>
+
+      <!-- Toggle -->
+      <div class="toggle">
+        <label>Off</label>
+        <input type="checkbox" id="switch">
+        <label for="switch" class="slider"></label>
+        <label>On</label>
+      </div>
+
+      <!-- Radio buttons -->
+      <div class="radio-group">
+        <label><input type="radio" name="radio" value="1"> Radio selection 1</label>
+        <label><input type="radio" name="radio" value="2" checked> Radio selection 2</label>
+        <label><input type="radio" name="radio" value="3"> Radio selection 3</label>
+      </div>
+
+      <!-- Dropdown -->
+      <label for="dropdown">Dropdown Title</label>
+      <select id="dropdown">
+        <option>Dropdown option</option>
+        <option>Dropdown option 1</option>
+        <option>Dropdown option 2</option>
+      </select>
+
+      <!-- Buttons -->
+      <div class="buttons">
+        <button type="reset" class="cancel">Cancel</button>
+        <button type="submit" class="next">Next</button>
+      </div>
+    </form>
+  </div>
+</body>
+</html>
